@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/calendario/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="modulepreload" href="/calendario/_app/immutable/entry/start.BMnRDRYP.js">
+		<link rel="modulepreload" href="/calendario/_app/immutable/chunks/DzvMsqC0.js">
+		<link rel="modulepreload" href="/calendario/_app/immutable/chunks/CJfivAtN.js">
+		<link rel="modulepreload" href="/calendario/_app/immutable/chunks/CKN_Wylj.js">
+		<link rel="modulepreload" href="/calendario/_app/immutable/entry/app.Dh3c9hHx.js">
+		<link rel="modulepreload" href="/calendario/_app/immutable/chunks/Cgl63eWk.js">
+		<link rel="modulepreload" href="/calendario/_app/immutable/chunks/Bq-qZP5W.js">
+		<link rel="modulepreload" href="/calendario/_app/immutable/chunks/BbNp6bIf.js">
+		<link rel="modulepreload" href="/calendario/_app/env.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_tolfyv = {
+						base: "/calendario",
+						assets: "/calendario",
+						env: null
+					};
+
+					const element = document.currentScript.parentElement;
+
+					import("/calendario/_app/env.js").then(({ env }) => {
+						__sveltekit_tolfyv.env = env;
+
+						Promise.all([
+							import("/calendario/_app/immutable/entry/start.BMnRDRYP.js"),
+							import("/calendario/_app/immutable/entry/app.Dh3c9hHx.js")
+						]).then(([kit, app]) => {
+							kit.start(app, element);
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
